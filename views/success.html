@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+		<style>
+			#info_box{
+				width: 600px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info_box">
+			<table class="table table-striped table-hover table-bordered">
+				<caption>用户列表</caption>
+				<tr>
+					<th>姓名</th>
+					<th>年龄</th>
+				</tr>
+				<% for(var i=0; i<list.length; i++) {%>
+					<tr>
+						<td><%= list[i].name %></td>
+						<td><%= list[i].age %></td>
+					</tr>
+				<% } %>
+				</table>
+			</div>
+				<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+				<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			</body>
+		</html>
